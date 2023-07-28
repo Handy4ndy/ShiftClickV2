@@ -212,7 +212,7 @@ ol {
         align-items: center;
         align-content: space-around;
         padding: 5px;
-        padding-bottom: 10px
+        padding-bottom: 10px;
         border-radius: 5px;
         margin: 10px;
         margin-bottom: 10px;
@@ -224,11 +224,20 @@ ol {
         padding: 10px;
         border-style: solid;
         border-color: #F7FFF6;
-        border-size: 2px;
+        border-width: 2px;
         margin: 20px;
         background-color: white;
         border-radius: 5px;
         
+}
+
+#quiz {
+    background-color: #ffffff;
+    border-style: solid;
+    border-width: 2px;
+    margin: 10px;
+    padding: 20px;
+    justify-content: left;
 }
 
 footer{

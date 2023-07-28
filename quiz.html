@@ -26,8 +26,80 @@
             </nav>
         </div>
         
-
     </header>
+
+    <main>
+
+        <h2>//Shiftclick quiz.html</h2>
+        <br>
+        <p>Here is a quiz page created in lesson</p>
+        <br>
+
+        <div id=quiz>
+
+            <h2>The Quiz</h2>
+
+            <form name="Quiz">
+
+                <label for="Name">Enter your name</label>
+                <input id="Name" type="text" name="Name">
+
+                <br>
+                <br>
+
+
+                <p>Whats your favorite games console?</p>
+
+                <input id="nintendo" type="radio" name="codelength" value="01">
+                <label for="nintendo">Nintendo</label>
+
+                <br>
+
+                <input id="sega" type="radio" name="codelength" value="02" selected>
+                <label for="sega">Sega</label>
+
+                <br>
+
+                <input id="xbox" type="radio" name="codelength" value="03" selected>
+                <label for="xbox">Xbox</label>
+
+                <br>
+
+                <input id="sony" type="radio" name="codelength" value="04" selected>
+                <label for="sony">Playstation</label>
+
+
+                <br><br>
+
+                <p>what console did you start with</p>
+
+                <input id="nintendo2" type="radio" name="start" value="01">
+                <label for="nintendo2">Nintendo</label>
+
+                <br>
+
+                <input id="sega2" type="radio" name="start" value="02" selected>
+                <label for="sega2">Sega</label>
+
+                <br>
+
+                <input id="playstation2" type="radio" name="start" value="03" selected>
+                <label for="playstation2">Playstation</label>
+
+                <br>
+
+                <input id="xbox2" type="radio" name="start" value="04" selected>
+                <label for="xbox2">Xbox</label>
+
+
+            </form>
+
+        </div>
+
+        <button type="button" onclick=checkAnswers()>Submit</button>
+
+        <script src="quiz.js"></script>
+    </main>
     
 </body>
 </html>
