@@ -1,7 +1,7 @@
 body{
     max-width: 800px;
     width: auto;
-    background-image: url(/backgound.jpg);
+    background-image: url(backgound.jpg);
     background-blend-mode: color-burn;
     background-size: contain;
     background-color:#0069E0;
