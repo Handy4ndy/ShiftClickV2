@@ -212,8 +212,10 @@ ol {
         align-items: center;
         align-content: space-around;
         padding: 5px;
+        padding-bottom: 10px
         border-radius: 5px;
         margin: 10px;
+        margin-bottom: 10px;
 
 }
 
