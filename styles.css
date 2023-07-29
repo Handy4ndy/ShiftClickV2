@@ -247,6 +247,10 @@ button{
     color:#f2f3f2;
 }
 
+.appimg {
+    max-height: 200px;
+    max-width: 200px;
+}
 
 footer{
     background-color: #F7FFF6;
