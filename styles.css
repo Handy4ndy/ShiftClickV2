@@ -1,5 +1,5 @@
 body {
-    max-width: 800px;
+    max-width: 90%;
     width: auto;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
@@ -14,7 +14,8 @@ body {
   }
   
   header {
-    width: 90%;
+    align-self: center;
+    width: 80%;
     min-height: fit-content;
     background-color: #0069E0;
     border-style: solid;
@@ -22,24 +23,33 @@ body {
     border-width: 2px;
     border-radius: 5px;
     padding: 10px;
-    margin-left: 5%;
-    margin-right: 5%;
   }
   
   main {
+    align-items: center;
+    align-content: center;
+    align-self: center;
     text-align: center;
-    width: 90%;
+    width: 80%;
     background-image: url(backgound.jpg);
     background-color: #f2f3f2;
     background-size: contain;
     background-blend-mode: overlay;
     border-radius: 5px;
-    margin-left: 5%;
-    margin-right: 5%;
+    padding: 10px;
   }
   
   footer {
-    background-color: #F7FFF6;
+    text-align: center;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    width: 80%;
+    font-size: 12pt;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
   }
   
   h1 {
@@ -47,6 +57,7 @@ body {
   }
   
   ol {
+    text-align: center;
     list-style-position: inside;
     color: #F7FFF6;
     padding-bottom: 10px;
@@ -59,14 +70,14 @@ body {
   }
   
   ul {
+    text-align: center;
     list-style-position: inside;
-    margin-left: 20px;
-    margin-right: 20px;
   }
   
   p {
-    margin-left: 20px;
-    margin-right: 20px;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
   }
   
   article {
