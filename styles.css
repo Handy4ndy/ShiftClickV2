@@ -189,8 +189,8 @@ body {
   }
   
   .box2 {
-    flex-basis: 30%;
-    min-width: 150px;
+    flex:1;
+    min-width: 50%;
     text-align: center;
     background-color: #0E1C36;
     border: solid;
