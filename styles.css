@@ -201,7 +201,7 @@ footer {
   }
   
   .box1 {
-    display: flex;
+    display: inline-flex;
     flex-wrap: wrap;
     justify-content: space-between;
     color: #F7FFF6;
