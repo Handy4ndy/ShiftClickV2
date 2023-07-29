@@ -222,12 +222,12 @@ ol {
 }
 
 .flex-container img{
-        max-height:100px;
+        max-width:100px;
         padding: 10px;
         border-style: solid;
         border-color: #F7FFF6;
         border-width: 2px;
-        margin: 20px;
+        margin: 5px;
         background-color: white;
         border-radius: 5px;
         
