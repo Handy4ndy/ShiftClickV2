@@ -1,7 +1,10 @@
 document.getElementById('checkscore').addEventListener('click', checkAnswers)
+
 let username = document.getElementById("Name")
 
 let quiz = document.forms.Quiz.elements;
+
+const link = '<a href="https://apply.shiftclick.uk/">Click here</a>';
 
 
 function checkAnswers() {
@@ -48,8 +51,13 @@ function checkAnswers() {
         return
     }else (score == 8);{
         alert(`Well done ${username.value} you Smashed it !! your score is ${score}`)
+        alert(`Why not enroll on our next course here ${link}`)
         return
     }
 }
 
 create.addEventListener("click", checkAnswers)
+
+
+
+
