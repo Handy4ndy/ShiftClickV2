@@ -125,6 +125,7 @@ ul {
     flex-basis: 50%; /* Take 50% of the available width */
     flex-wrap: wrap;
     flex: 1;
+    list-style-position: inside;
 }
 
 .logoimg {
@@ -156,6 +157,7 @@ ol {
     color:#F7FFF6;
     padding-bottom: 10px;
     flex: 1;
+    list-style-position: inside;
 }
 
 .logoimg2 {
