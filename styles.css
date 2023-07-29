@@ -209,7 +209,7 @@ footer {
 }
 
 .box2 {
-    flex-basis: calc(30.33% - 10px); /* Divide equally with margin */
+    flex-basis: 20%; 
     text-align: center;
     background-color: #0E1C36;
     border: solid;
