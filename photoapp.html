@@ -152,25 +152,27 @@
                 // Convert the text to BLOB.
                 const textToBLOB = new Blob([data], { type: 'text/plain' });
                 const sFileName = "filename";	   // The file to save the data.
-            
+
                 let newLink = document.createElement("a");
-                newLink.download = sFileName;
-                newLink.innerHTML = "Download File:";
-            
+                    newLink.download = sFileName;
+                    newLink.innerHTML = "Download File:";
+
                 if (window.webkitURL != null) {
                     newLink.href = window.webkitURL.createObjectURL(textToBLOB);
-                }
-                else {
+                  } else {
                     newLink.href = window.URL.createObjectURL(textToBLOB);
                     newLink.style.display = "none";
                     document.body.appendChild(newLink);
                 }
-            
-                newLink.click();
-            }</script>
+
+                    newLink.click();
+                    return false; // Prevent form submission
+                }
+            </script>
 
 
-        </main>
+
+ </main>
 </body>
 
 </html>
