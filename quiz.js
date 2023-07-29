@@ -1,9 +1,8 @@
-
-
+document.getElementById('checkscore').addEventListener('click', checkAnswers)
 let username = document.getElementById("Name")
 
 let quiz = document.forms.Quiz.elements;
-let create = document.getElementById("checkscore")
+
 
 function checkAnswers() {
     /*let score = 10
