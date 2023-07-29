@@ -1,4 +1,4 @@
-let saveFile = () => {
+/*let saveFile = () => {
 
     //This is setting the checkboxes as an array
     var form = document.getElementById('app');
@@ -38,4 +38,4 @@ let saveFile = () => {
     }
 
     newLink.click();
-}
+}*/
