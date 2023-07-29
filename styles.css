@@ -237,7 +237,14 @@ ol {
     border-width: 2px;
     margin: 10px;
     padding: 20px;
+    margin-bottom: 20px;
     justify-content: left;
+}
+
+button{
+    margin: 20px;
+    background-color: #0E1C36;
+    color:#f2f3f2;
 }
 
 footer{
