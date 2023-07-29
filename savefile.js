@@ -1,3 +1,5 @@
+document.getElementById("submit").addEventListener(click(saveFile))
+
 let saveFile = () => {
 
     //This is setting the checkboxes as an array
@@ -10,14 +12,14 @@ let saveFile = () => {
     })
 
     form = document.forms.app.elements;
-    const gender = form.gender.value;
-    const personality = myArray;
+    const console = form.console.value;
+    const genre = myArray;
     const link = form.photourl.value;
 
     // This variable stores all the data.
     let data =
-        '\r Gender?: ' + gender + ' \r\n ' +
-        'Personality: ' + personality + ' \r\n ' +
+        '\r console?: ' + console + ' \r\n ' +
+        'genre: ' + genre + ' \r\n ' +
         'Link: ' + link
 
     // Convert the text to BLOB.
