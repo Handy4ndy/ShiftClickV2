@@ -1,5 +1,3 @@
-document.getElementById("submit").addEventListener(click(saveFile))
-
 let saveFile = () => {
 
     //This is setting the checkboxes as an array
