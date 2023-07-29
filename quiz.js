@@ -43,19 +43,11 @@ function checkAnswers() {
 
     if (score <= 2){
         alert(`Unlucky ${username.value}, your score was ${score}`)
-<<<<<<< HEAD
         return
     }else if(score <= 6){
-=======
-    }else if(score <= 6){
->>>>>>> 22b6a96c196dcaa1e7d55ca8ead311e46e394c51
         alert(`Nice work ${username.value}, your score is ${score}`)
-<<<<<<< HEAD
         return
-    }else(score == 8);{
-=======
     }else (score == 8);{
->>>>>>> 22b6a96c196dcaa1e7d55ca8ead311e46e394c51
         alert(`Well done ${username.value} you Smashed it !! your score is ${score}`)
         return
     }
