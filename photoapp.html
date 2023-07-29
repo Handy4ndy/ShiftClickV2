@@ -74,107 +74,71 @@
 
             <h2> sumbit your pictures here</h2>
 
-            <form id="app" name="app">
+            <form name="app">
                 <fieldset>
-                    <legend>What is your favorite console brand?</legend>
-
-                    <label for="nintendo3">Nintendo</label>
-                    <input id="nintendo3" type="radio" name="console" value="Nintendo">
-
+                    <legend>
+                        What gender is your Cat?
+                    </legend>
+                    <input id="Male"type= "radio" name="gender" value="Male">
+                    <label for="Male">  Male</label>
+                    <br> 
+                    <input id="Female"type= "radio" name="gender" value="Female">
+                    <label for="Female">  Female</label> 
                     <br>
-
-                    <label for="sega3">Sega</label>
-                    <input id="sega3" type="radio" name="console" value="Sega" selected>
-
-                    <br>
-
-                    <label for="playstation3">Playsation</label>
-                    <input id="playstation3" type="radio" name="console" value="Playstation" selected>
-
-                    <br>
-
-                    <label for="xbox3">Xbox</label>
-                    <input id="xbox3" type="radio" name="console" value="Xbox" selected>
-
+                    <input id="Other"type= "radio" name="gender" value="Other">
+                    <label for="Other">  Other</label>
                 </fieldset>
-
-                <fieldset>
-                    <legend> What game genres are you interested in?</legend>
-
-                    <label for="action">Action</label>
-                    <input id="action" type="checkbox" name="genre" value="Action">
-
-                    <label for="adventure">Adventure</label>
-                    <input id="adventure" type="checkbox" name="genre" value="Adventure">
-
-                    <label for="rpg">Role playing(RPG)</label>
-                    <input id="rpg" type="checkbox" name="genre" value="RPG">
-
-                    <label for="simulation">Simulation</label>
-                    <input id="simulation" type="checkbox" name="genre" value="Simulation">
-
-                    <label for="survival">Survival</label>
-                    <input id="survival" type="checkbox" name="genre" value="Survival">
-
+                <fieldset> 
+                <legend> What is your Cat's personality?</legend>
+                <input id="Hangry" type="Checkbox" name="personality" value="Hangry" >
+                <label for="Hangry"> Hangry</label> 
+                <br>
+                <input id="Lazy" type="Checkbox" name="personality" value="Lazy" >
+                <label for="Lazy"> Lazy</label> <br>
+                <input id="Adventorous" type="Checkbox" name="personality" value="Adventorous" >
+                <label for="Adventorous"> Adventorous</label> 
                 </fieldset>
+             <label for="url"> Enter your photo URL</label>
+             <input id="URL" type="text" name="photourl">
+             <input type="button" value="Submit"
+             onclick="saveFile()">
+             </form>
 
-
-
-                <label for="urllink">submit your url</label>
-                <input id="urllink" type="text" name="photourl">
-
-                <button id="submit" onclick="savefile()">Submit</button>
-
-            </form>
-
-            <script>
-            
-                let saveFile = () => {
-
-                //This is setting the checkboxes as an array
-                var form = document.getElementById('app');
-                var myArray = [];
-                form.querySelectorAll('input').forEach(function (input) {
-                    if (input.type === 'checkbox' && input.checked) {
-                        myArray.push(input.value)
-                    }
-                })
-            
-                form = document.forms.app.elements;
-                const console = form.console.value;
-                const genre = myArray;
-                const link = form.photourl.value;
-            
-                // This variable stores all the data.
-                let data =
-                    '\r console?: ' + console + ' \r\n ' +
-                    'genre: ' + genre + ' \r\n ' +
-                    'Link: ' + link
-            
-                // Convert the text to BLOB.
-                const textToBLOB = new Blob([data], { type: 'text/plain' });
-                const sFileName = "filename";	   // The file to save the data.
-
-                let newLink = document.createElement("a");
-                    newLink.download = sFileName;
-                    newLink.innerHTML = "Download File:";
-
-                if (window.webkitURL != null) {
-                    newLink.href = window.webkitURL.createObjectURL(textToBLOB);
-                  } else {
-                    newLink.href = window.URL.createObjectURL(textToBLOB);
-                    newLink.style.display = "none";
-                    document.body.appendChild(newLink);
-                }
-
-                    newLink.click();
-                    return false; // Prevent form submission
-                }
-            </script>
-
-
-
- </main>
+    </main>
 </body>
+
+<script>
+    let saveFile = () => {
+        form = document.forms.app.elements;
+        const gender = form.gender.value;
+        const personality = form.personality.value;
+        const link = form.photourl.value;
+
+        // This variable stores all the data.
+        let data = 
+            '\r Gender?: ' + gender + ' \r\n ' + 
+            'Personality: ' + personality + ' \r\n ' + 
+            'Link: ' + link 
+        
+        // Convert the text to BLOB.
+        const textToBLOB = new Blob([data], { type: 'text/plain' });
+        const sFileName = "filename";	   // The file to save the data.
+
+        let newLink = document.createElement("a");
+        newLink.download = sFileName;
+        newLink.innerHTML = "Download File:";
+
+        if (window.webkitURL != null) {
+            newLink.href = window.webkitURL.createObjectURL(textToBLOB);
+        }
+        else {
+            newLink.href = window.URL.createObjectURL(textToBLOB);
+            newLink.style.display = "none";
+            document.body.appendChild(newLink);
+        }
+
+        newLink.click(); 
+    }
+</script>
 
 </html>
