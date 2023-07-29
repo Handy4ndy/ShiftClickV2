@@ -123,6 +123,7 @@
 </body>
 
 <script>
+
     let saveFile = () => {
 
         //This is setting the checkboxes as an array
@@ -135,13 +136,13 @@
             })
 
         form = document.forms.app.elements;
-        const console = form.console.value;
+        const consoleBrand = form.console.value;
         const genre = myArray;
         const link = form.photourl.value;
         
         // This variable stores all the data.
         let data = 
-        '\r console: ' + console + ' \r\n ' + 
+        '\r console: ' + consoleBrand + ' \r\n ' + 
             'genre: ' + genre + ' \r\n ' + 
             'Link: ' + link 
         
