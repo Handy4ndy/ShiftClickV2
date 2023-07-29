@@ -43,13 +43,9 @@ function checkAnswers() {
 
     if (score <= 2){
         alert(`Unlucky ${username.value}, your score was ${score}`)
-    }
-    
-    if(score <= 6){
+    }else if(score <= 6){
         alert(`Nice work ${username.value}, your score is ${score}`)
-    }
-    
-    if(score == 8);{
+    }else (score == 8);{
         alert(`Well done ${username.value} you Smashed it !! your score is ${score}`)
     }
 }
