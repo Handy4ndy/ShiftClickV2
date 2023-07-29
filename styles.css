@@ -120,7 +120,7 @@ article {
     flex:1
 }
 
-ul {
+.section1 ul {
     color:#F7FFF6;
     flex-basis: 50%; /* Take 50% of the available width */
     flex-wrap: wrap;
