@@ -3,6 +3,7 @@
 let username = document.getElementById("Name")
 
 let quiz = document.forms.Quiz.elements;
+let create = document.getElementById("checkscore")
 
 function checkAnswers() {
     /*let score = 10
@@ -52,4 +53,6 @@ function checkAnswers() {
         alert(`Well done ${username.value} you Smashed it !! your score is ${score}`)
     }
 }
+
+create.addEventListener("click", checkAnswers)
 
