@@ -4,7 +4,7 @@ let username = document.getElementById("Name")
 
 let quiz = document.forms.Quiz.elements;
 
-const link = '<a href="https://apply.shiftclick.uk/">Click here</a>';
+const link = `https://apply.shiftclick.uk/`
 
 
 function checkAnswers() {
@@ -45,13 +45,13 @@ function checkAnswers() {
 
     if (score <= 2){
         alert(`Unlucky ${username.value}, your score was ${score}`)
+        alert(`Why not enroll on our next course here:\n\n ${link}`)
         return
     }else if(score <= 6){
         alert(`Nice work ${username.value}, your score is ${score}`)
         return
     }else (score == 8);{
         alert(`Well done ${username.value} you Smashed it !! your score is ${score}`)
-        alert(`Why not enroll on our next course here ${link}`)
         return
     }
 }
