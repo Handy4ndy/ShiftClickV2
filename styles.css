@@ -319,6 +319,9 @@ footer {
     margin-left: 5%;
     margin-right: 5%;
     align-self: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .cell {
@@ -330,5 +333,7 @@ footer {
     align-items: center;
     font-size: 48px;
     contain: content;
+    align-self: center;
+    align-content: center;
 }
   
