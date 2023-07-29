@@ -28,14 +28,14 @@ function checkAnswers() {
 
     answer3 = quiz.css.value
 
-    if (answer2 == "03") {
+    if (answer3 == "03") {
 
         score = score + 2;
     }
 
     answer4 = quiz.java.value
 
-    if (answer2 == "02") {
+    if (answer4 == "02") {
 
         score = score + 2;
     }
