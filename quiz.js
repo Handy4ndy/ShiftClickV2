@@ -1,4 +1,4 @@
-let score = 0;
+
 
 let username = document.getElementById("Name")
 
