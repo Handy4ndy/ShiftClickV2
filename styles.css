@@ -249,6 +249,12 @@ button{
     color:#f2f3f2;
 }
 
+ul{
+list-style-position: inside;
+margin-left: 5%;
+margin-right: 5%;
+}
+
 .appimg {
     max-height: 200px;
     max-width: 200px;
