@@ -13,3 +13,19 @@ Feel free to explore around! Our sample page provides additional context and eve
 We are committed to providing a welcoming and supportive environment for all our participants, and we hope you find the //ShiftClick experience both enjoyable and enriching. If you have any questions or need further assistance, don't hesitate to ask. 
 
 Happy coding!
+
+##Table of Contents
+
+index.html - The home page of the site displaying a number of different elements.
+about.html - The about page explaining what the web site is about.
+photoapp.html - A photo app utilized to develop html and css skills.
+gallery.html - The gallery that incorperates responsive design.
+quiz.html - A quiz page that utilizes forms and functions.
+resources.html - The bonus page where there are code samples and minigames
+    /boilerplate.html - html structure boilerprint
+    /tags.html - Displaying a range of element tags
+    /links.html - html link referances
+    /styles.css - The link to the site css page
+    /tictactoe.html - Tic tac toe minigame
+    /rps.html - Rock paper scissors game
+
