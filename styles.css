@@ -339,4 +339,16 @@ footer {
     align-self: center;
     align-content: center;
 }
+
+#rpsGame {
+  border-style: solid;
+  border-color: #0E1C36;
+  border-width: 1pt;
+  padding: 5px;
+
+}
   
+#results{
+  padding-top: 30px;
+  text-align: center;
+}
