@@ -190,6 +190,7 @@ article {
 
     .box1 {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         color: #F7FFF6;
         padding-bottom: 20px;
@@ -199,6 +200,7 @@ article {
   
     .box2 {
         flex-basis: 30%;
+        min-width: 120px;
         text-align: center;
         background-color:#0E1C36;
         border: solid;
@@ -277,10 +279,16 @@ article {
 }
 
 footer {
-    background-color: #f0f0f0;
-    width:80%;
-    padding: 10px;
     text-align: center;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    width:60%;
+    font-size: 12pt;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
   }
   
   .footer-content {
