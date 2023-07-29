@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="https://d2y5h3osumboay.cloudfront.net/ikx9nbk4zssez1y05e7c43ntme9o" type="image/x-icon">
+    <link rel="shortcut icon" href="https://d2y5h3osumboay.cloudfront.net/ikx9nbk4zssez1y05e7c43ntme9o"
+        type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
+
 <body>
     <header>
 
         <div class="navbar">
 
-            <img class="logo" src="https://pbs.twimg.com/media/F0HC2aUWwAErVrO?format=png&name=large" alt="ShiftClick Logo">
+            <img class="logo" src="https://pbs.twimg.com/media/F0HC2aUWwAErVrO?format=png&name=large"
+                alt="ShiftClick Logo">
 
             <nav class="navigation">
 
@@ -22,11 +26,112 @@
                 <a href="gallery.html">Gallery</a>
                 <a href="quiz.html">Quiz</a>
                 <a href="resources.html">Samples</a>
-                
+
             </nav>
         </div>
-        
+
 
     </header>
+
+    <main>
+
+        <h1><em>Games console</em> Photo app</h1>
+
+        <p> Here is a photo app created in session to learn the basics of HTML, CSS and inline javascript</p>P
+
+        
+            <section>
+
+                <h3>Games consoles</h3>
+
+                <p>Here are some less known facts about games consoles</p>
+
+                <ul>
+                    <li> The Nintendo entertainment system was not the first games console. the Magnavox Odyssey came first being released in 1972.</li>
+                    <li> Nintendo asked Sony for help to develop a disk sytem for the SNES, then turned their back on them giving rise to the playstation.</li>
+                    <li> Sega similarly asked microsoft for help with the dreamcast, after the engineers threw a couple of laptops together and made a pitch that gave birth to the Xbox.</li>
+                </ul>
+
+                <img class="image-container" src="https://2.bp.blogspot.com/-pGJP2MMRsv4/Va8w5hx497I/AAAAAAAAQOs/xc20THdGXYc/s1600/odyssey.jpg" alt="This is an image of the Magnavox Odyssey">
+
+
+            </section>
+            <section>
+                <h2> Best selling consoles</h2>
+
+                <p>Here are the top 3 best selling consoles to date</p>
+
+                <ol>
+                    <li> Playstation 2 - 155 million units</li>
+                    <li> Nintendo DS - 154 million units</li>
+                    <li> Nintendo Switch - 125 million units</li>
+                </ol>
+
+                <img src="https://en.wikipedia.org/wiki/PlayStation_2#/media/File:PS2-Versions.jpg" alt="This is an image of the playstation 2">
+            </section>
+
+            <p>This is a link to a wikipedia for more info <a href="https://en.wikipedia.org/wiki/List_of_best-selling_game_consoles">Click
+                    Here</a>
+            </p>
+
+            <h2> sumbit your pictures here</h2>
+
+            <form id="app" name="app">
+                <fieldset>
+                    <legend>What is your favorite console brand?</legend>
+
+                    <label for="nintendo3">Nintendo</label>
+                    <input id="nintendo3" type="radio" name="console" value="Nintendo">
+
+                    <br>
+
+                    <label for="sega3">Sega</label>
+                    <input id="sega3" type="radio" name="console" value="Sega" selected>
+
+                    <br>
+
+                    <label for="playstation3">Playsation</label>
+                    <input id="playstation3" type="radio" name="console" value="Playstation" selected>
+
+                    <br>
+
+                    <label for="xbox3">Xbox</label>
+                    <input id="xbox3" type="radio" name="console" value="Xbox" selected>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend> What game genres are you interested in?</legend>
+
+                    <label for="action">Action</label>
+                    <input id="action" type="checkbox" name="genre" value="Action">
+
+                    <label for="adventure">Adventure</label>
+                    <input id="adventure" type="checkbox" name="genre" value="Adventure">
+
+                    <label for="rpg">Role playing(RPG)</label>
+                    <input id="rpg" type="checkbox" name="genre" value="RPG">
+
+                    <label for="simulation">Simulation</label>
+                    <input id="simulation" type="checkbox" name="genre" value="Simulation">
+
+                    <label for="survival">Survival</label>
+                    <input id="survival" type="checkbox" name="genre" value="Survival">
+
+                </fieldset>
+
+
+
+                <label for="urllink">submit your url</label>
+                <input id="urllink" type="text" name="photourl">
+                <input type="button" value="Submit" onclick="saveFile()">
+
+                <script src="savefile.js"></script>
+
+            </form>
+
+
+        </main>
 </body>
+
 </html>
