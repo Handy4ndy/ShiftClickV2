@@ -1,6 +1,6 @@
 body {
-    max-width: 90%;
-    width: auto;
+    max-width: 800px;
+    width: 100%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
     background-image: url(backgound.jpg);
@@ -9,13 +9,13 @@ body {
     background-color: #0069E0;
     padding-left: 5%;
     padding-right: 5%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 5%;
+    margin-right: 5%;
   }
   
   header {
     align-self: center;
-    width: 80%;
+    width: 90%;
     min-height: fit-content;
     background-color: #0069E0;
     border-style: solid;
@@ -23,6 +23,8 @@ body {
     border-width: 2px;
     border-radius: 5px;
     padding: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
   }
   
   main {
@@ -37,6 +39,8 @@ body {
     background-blend-mode: overlay;
     border-radius: 5px;
     padding: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
   }
   
   footer {
@@ -200,9 +204,7 @@ body {
   }
   
   .box2 {
-    flex-basis: content;
-    flex-wrap: wrap;
-    min-width: 50%;
+    flex-basis: 30%;
     text-align: center;
     background-color: #0E1C36;
     border: solid;
