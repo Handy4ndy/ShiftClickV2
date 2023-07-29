@@ -76,32 +76,47 @@
 
             <form name="app">
                 <fieldset>
-                    <legend>
-                        What gender is your Cat?
-                    </legend>
-                    <input id="Male"type= "radio" name="gender" value="Male">
-                    <label for="Male">  Male</label>
+
+                    <legend>What was your first console?</legend>
+
+                    <input id="nintendo"type= "radio" name="console" value="Nintendo">
+                    <label for="nintendo">Nintendo</label>
                     <br> 
-                    <input id="Female"type= "radio" name="gender" value="Female">
-                    <label for="Female">  Female</label> 
+                    <input id="sega"type= "radio" name="console" value="Sega">
+                    <label for="sega">Sega</label> 
                     <br>
-                    <input id="Other"type= "radio" name="gender" value="Other">
-                    <label for="Other">  Other</label>
+                    <input id="playstation"type= "radio" name="console" value="Playstation">
+                    <label for="playstation">Playstation</label>
+                    <br>
+                    <input id="xbox" type= "radio" name="console" value="Xbox">
+                    <label for="xbox">Xbox</label>
+
                 </fieldset>
+
                 <fieldset> 
-                <legend> What is your Cat's personality?</legend>
-                <input id="Hangry" type="Checkbox" name="personality" value="Hangry" >
-                <label for="Hangry"> Hangry</label> 
+
+                <legend> What game genre do you prefer?</legend>
+
+                <input id="action" type="Checkbox" name="genre" value="Action" >
+                <label for="action">Action</label> 
                 <br>
-                <input id="Lazy" type="Checkbox" name="personality" value="Lazy" >
-                <label for="Lazy"> Lazy</label> <br>
-                <input id="Adventorous" type="Checkbox" name="personality" value="Adventorous" >
-                <label for="Adventorous"> Adventorous</label> 
+                <input id="adventure" type="Checkbox" name="genre" value="Adventure" >
+                <label for="adventure">Adventure</label> <br>
+                <br>
+                <input id="rpg" type="Checkbox" name="genre" value="RPG" >
+                <label for="rpg">Role Playing (RPG)</label> 
+                <br>
+                <input id="sim" type="Checkbox" name="genre" value="Simulation" >
+                <label for="sim">Simulation</label> 
+                <br>
+                <input id="survival" type="Checkbox" name="genre" value="Survival" >
+                <label for="survival">Survival</label> 
+
                 </fieldset>
+
              <label for="url"> Enter your photo URL</label>
              <input id="URL" type="text" name="photourl">
-             <input type="button" value="Submit"
-             onclick="saveFile()">
+             <input type="button" value="Submit" onclick="saveFile()">
              </form>
 
     </main>
@@ -109,15 +124,25 @@
 
 <script>
     let saveFile = () => {
-        form = document.forms.app.elements;
-        let gender = form.gender.value;
-        let personality = form.personality.value;
-        const link = form.photourl.value;
 
+        //This is setting the checkboxes as an array
+        var form = document.getElementById('app');
+        var myArray = [];
+            form.querySelectorAll('input').forEach(function (input) {
+                if(input.type === 'checkbox'  && input.checked) {
+                    myArray.push(input.value)
+                }
+            })
+
+        form = document.forms.app.elements;
+        const console = form.console.value;
+        const genre = myArray;
+        const link = form.photourl.value;
+        
         // This variable stores all the data.
         let data = 
-            '\r Gender?: ' + gender + ' \r\n ' + 
-            'Personality: ' + personality + ' \r\n ' + 
+        '\r console: ' + console + ' \r\n ' + 
+            'genre: ' + genre + ' \r\n ' + 
             'Link: ' + link 
         
         // Convert the text to BLOB.
