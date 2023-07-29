@@ -112,7 +112,7 @@
 
              <label for="url"> Enter your photo URL</label>
              <input id="URL" type="text" name="photourl">
-             <input type="button" value="Submit" onclick="saveFile()">
+             <input type="button" value="Submit" onclick="saveFile">
              </form>
 
     </main>
@@ -132,7 +132,7 @@
             })
 
         
-        const consoleBrand = document.getElementById('app').elements.console1.value;
+        const consoleBrand = form.console1.value;
         const genre = myArray;
         const link = form.photourl.value;
         
