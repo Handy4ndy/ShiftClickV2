@@ -41,6 +41,7 @@ main {
 }
 
 footer {
+    display: flex;
     text-align: center;
     width: 80%;
     font-size: 12pt;
