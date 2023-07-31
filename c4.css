@@ -161,7 +161,7 @@ button:hover {
     border: 5px solid #000;
     max-width: 400px;
     background-color: rgb(84, 7, 249);
-    padding: 5px;
+    
     display: flex;
     justify-content: center;
     align-items: center;
