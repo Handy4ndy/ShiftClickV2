@@ -1,0 +1,185 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10px;
+    align-items: center;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    width: 90%;
+    min-height: fit-content;
+    background-color: #0069E0;
+    border-style: solid;
+    border-color: #F7FFF6;
+    border-width: 2px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+
+main {
+    text-align: center;
+    width: 80%;
+    background-image: url(backgound.jpg);
+    background-color: #f2f3f2;
+    background-size: contain;
+    background-blend-mode: overlay;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+footer {
+    text-align: center;
+    width: 80%;
+    font-size: 12pt;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.navbar {
+    display: inline-flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #F7FFF6;
+  }
+  
+  .logo {
+    float: left;
+    width: 15%;
+    min-width: 300px;
+    color: #F7FFF6;
+    padding-top: 5px;
+  }
+  
+  .navigation {
+    text-align: center;
+    align-self: center;
+    justify-content: space-evenly;
+    float: right;
+    text-decoration-style: none;
+    color: #F7FFF6;
+    padding-top: 5px;
+  }
+  
+  .navigation a {
+    color: #F7FFF6;
+    padding: 2px;
+    padding-bottom: 3px;
+  }
+  
+  a:hover {
+    background-color: #0E1C36;
+  }
+  
+  .selected {
+    background-color: #0E1C36;
+  }
+/* Add styles for the section1 container */
+.section1 {
+    display: flex;
+    flex-direction: column;
+    column-count: 1;
+    align-items: center;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input-wrapper label {
+    font-size: 16px;
+    color: #fff;
+    margin-right: 5px;
+}
+
+.input-wrapper input {
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #6b6b6b;
+    border-radius: 5px;
+    background-color: #3d3d3d;
+    color: #fff;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6b6b6b;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.scoreboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.displayScore {
+    width: 300px;
+    padding: 5px;
+    border: 1px solid #6b6b6b;
+    border-radius: 5px;
+    background-color: #3d3d3d;
+    color: #fff;
+}
+
+.connect4 {
+    border: 5px solid #000;
+    max-width: 400px;
+    background-color: rgb(84, 7, 249);
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+    transform: rotate(90deg); /* Rotate the entire grid clockwise */
+}
+
+.grid {
+    display: flex;
+}
+
+.column {
+    display: flex;
+    flex-direction: column-reverse; /* Reverse the columns to make it top-to-bottom */
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    cursor: pointer;
+    margin: 5px;
+}
+
+/* Customize the colors for player 1 and player 2 counters if needed */
+.player1 {
+    background-color: red;
+}
+
+.player2 {
+    background-color: yellow;
+}
