@@ -141,7 +141,6 @@ footer {
 .section1 {
     display: flex;
     flex-direction: column;
-    column-count: 1;
     align-items: center;
     padding-top: 20px;
     margin-bottom: 20px;
@@ -210,6 +209,7 @@ button:hover {
     align-items: center;
     padding-bottom: 5px;
     transform: rotate(90deg); /* Rotate the entire grid clockwise */
+    margin: 0 auto; /* Center the grid horizontally */
 }
 
 .grid {
