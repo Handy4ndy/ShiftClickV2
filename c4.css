@@ -41,14 +41,31 @@ main {
 }
 
 footer {
-    display: flex;
-    text-align: center;
-    width: 80%;
-    font-size: 12pt;
-    background-color: #f0f0f0;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 5px;
+  text-align: center;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+  width: 60%;
+  font-size: 12pt;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-content a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.footer-content p {
+  margin: 0;
 }
 
 /* Media queries for responsiveness */
