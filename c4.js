@@ -1,23 +1,28 @@
 function setPlayerNames() {
-    const player1Name = prompt("Enter Player 1 name:");
-    const player2Name = prompt("Enter Player 2 name:");
-  
-    // Update the player names in the textarea
-    const displayScore = document.querySelector(".displayScore");
-    displayScore.textContent = `Scores:\n${player1Name}: 0\n${player2Name}: 0`;
-  
-    // Save the player names in localStorage to persist them across page refreshes
-    localStorage.setItem("player1Name", player1Name);
-    localStorage.setItem("player2Name", player2Name);
-  }
-  
-  function updateScores(player1Score, player2Score) {
-    const player1Name = localStorage.getItem("player1Name") || "Player 1";
-    const player2Name = localStorage.getItem("player2Name") || "Player 2";
-    const displayScore = document.querySelector(".displayScore");
-    displayScore.textContent = `Scores:\n${player1Name}: ${player1Score}\n${player2Name}: ${player2Score}`;
-  }
-  
+  const player1Name = prompt("Enter Player 1 name:");
+  const player2Name = prompt("Enter Player 2 name:");
+
+  // Update the player names in the textarea
+  const displayScore = document.querySelector(".displayScore");
+  displayScore.textContent = `Scores:\n${player1Name}: 0\n${player2Name}: 0`;
+
+  // Save the player names in localStorage to persist them across page refreshes
+  localStorage.setItem("player1Name", player1Name);
+  localStorage.setItem("player2Name", player2Name);
+
+  // Initialize the scores in localStorage to 0
+  localStorage.setItem("player1Score", 0);
+  localStorage.setItem("player2Score", 0);
+}
+
+function updateScores(player1Score, player2Score) {
+  const player1Name = localStorage.getItem("player1Name") || "Player 1";
+  const player2Name = localStorage.getItem("player2Name") || "Player 2";
+  const displayScore = document.querySelector(".displayScore");
+  displayScore.textContent = `Scores:\n${player1Name}: ${player1Score}\n${player2Name}: ${player2Score}`;
+}
+
+
   document.addEventListener("DOMContentLoaded", () => {
     const grid = document.querySelector(".grid");
     const cells = document.querySelectorAll(".cell");
@@ -83,13 +88,15 @@ function setPlayerNames() {
             setTimeout(() => {
               // Check which player has won and update their score
               if (currentPlayer === 1) {
-                alert(`Player ${localStorage.getItem("player1Name")} wins!`);
-                updateScores(Number(localStorage.getItem("player1Score")) + 1, Number(localStorage.getItem("player2Score")));
+                alert(`${localStorage.getItem("player1Name")} wins!, ${localStorage.getItem("player2Name")} Try again you got this!`);
+                localStorage.setItem("player1Score", Number(localStorage.getItem("player1Score")) + 1);
+                updateScores(Number(localStorage.getItem("player1Score")), Number(localStorage.getItem("player2Score")));
               } else {
-                alert(`Player ${localStorage.getItem("player2Name")} wins!`);
-                updateScores(Number(localStorage.getItem("player1Score")), Number(localStorage.getItem("player2Score")) + 1);
+                alert(`${localStorage.getItem("player2Name")} wins!, ${localStorage.getItem("player1Name")} Try again you got this!`);
+                localStorage.setItem("player2Score", Number(localStorage.getItem("player2Score")) + 1);
+                updateScores(Number(localStorage.getItem("player1Score")), Number(localStorage.getItem("player2Score")));
               }
-  
+        
               resetGame();
             }, 100);
           } else {
