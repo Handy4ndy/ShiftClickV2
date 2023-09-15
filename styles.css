@@ -236,7 +236,8 @@ color:#ffffff;
 }
 
 .flex-container img {
-  max-width: 100px;
+  width: 100%;
+  flex-basis: 30%;
   background-color: white;
   border-style: solid;
   border-color: #F7FFF6;
