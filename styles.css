@@ -364,13 +364,9 @@ margin: auto;
 }
 
 .navigation {
-  text-align: center;
-  align-self: center;
-  justify-content: space-evenly;
+  
  margin:auto;
-  text-decoration-style: none;
-  color: #F7FFF6;
-  padding-top: 5px;
+
 }
 
 }
