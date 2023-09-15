@@ -358,4 +358,10 @@ header, main, footer {
   flex-basis: 60%;
   margin-bottom: 20px; 
 }
+
+.logo{
+  flex-direction: column;
+margin: auto;
+
+}
 }
