@@ -76,6 +76,10 @@ article {
   margin-right: 20%;
 }
 
+iframe{
+  width:80%
+}
+
 .navbar {
   display: inline-flex;
   justify-content: space-between;
