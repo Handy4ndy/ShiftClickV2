@@ -223,6 +223,10 @@ color:#ffffff;
 
 
 /* ------------------Style for gallery------------------*/
+embed{
+  width:400px;
+  height:400px;
+}
 
 .flex-container {
   align-items: center;
