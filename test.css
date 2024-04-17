@@ -1,14 +1,16 @@
 html, body {
-    margin: 0;
-    padding: 0;
-  }
-  
-  canvas {
-    display: block;
-    margin-top:-400px;
-  }
-  
-  #scratchOff {
-    display: block; /* Hide the image by default */
-    width: 400px;
-  }
+  margin: auto;
+  padding: 0; 
+}
+
+canvas {
+  display: block;
+  margin: auto;
+  margin-top: -400px;
+}
+
+#scratchOff {
+  display: block; /* Hide the image by default */
+  width: 400px;
+  margin:auto;
+}
