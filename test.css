@@ -6,9 +6,9 @@ html, body {
 }
 
 canvas {
-  display: block;
+  display: flex;
   margin: auto;
-  margin-top: -400px;
+  margin-top: -555px;
 }
 
 #scratchOff {
